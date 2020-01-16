@@ -481,6 +481,11 @@ open class FSPagerView: UIView,UICollectionViewDataSource,UICollectionViewDelega
         self.collectionView.reloadData()
     }
     
+    @objc(insertItemsAtIndexPaths:)
+    open func insertItems(at indexPaths: [IndexPath]) {
+        self.collectionView.insertItems(at: indexPaths)
+    }
+    
     /// Selects the item at the specified index and optionally scrolls it into view.
     ///
     /// - Parameters:
